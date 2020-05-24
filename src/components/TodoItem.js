@@ -12,7 +12,7 @@ class TodoItem extends Component {
     let className = classNames('TodoItem', {'TodoItem-complete': item.isComplete});
     return (
       <div className={className}>
-        <p>{item.title}</p>
+        <p>{item.title}{item.image}</p>
       </div>
     )
   }
