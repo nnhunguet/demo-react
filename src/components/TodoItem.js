@@ -4,15 +4,11 @@ import './TodoItem.css'
 class TodoItem extends Component {
   render() {
     var classNames = require('classnames');
-    const { item } = this.props;
-    // let className = 'TodoItem';
-    // if(item.isComplete) {
-    //   className += ' TodoItem-complete';
-    // } 
+    const { item, onClick } = this.props;
     let className = classNames('TodoItem', {'TodoItem-complete': item.isComplete});
     return (
-      <div className={className}>
-        <p>{item.title}{item.image}</p>
+      <div className={className} onClick={onClick}>
+        <p>{item.title}</p>
       </div>
     )
   }
