@@ -1,12 +1,38 @@
-.TodoItem {
-  font-family: Helvetica;
-  font-weight: 300;
-  font-size: 24px;
-  color: #4d4d4d;
-  text-align: center;
+.App {
+  margin-top: 2rem;
+  border: 1px solid #eee;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.TodoItem-complete {
+.TodoItem {
+  font-family: Helvetica;
+  padding: 10px 5px;
+  color: #4d4d4d;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+}
+
+.TodoItem > p {
+  margin: 0px;
+}
+
+.TodoItem:last-child {
+  border: none;
+}
+
+.TodoItem-complete > p {
   text-decoration: line-through;
   opacity: .4;
 }
+
+.TodoItem svg {
+  width: 32px;
+  margin: 0 1rem;
+} 
+
