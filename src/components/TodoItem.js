@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './TodoItem.css';
 import { ReactComponent as Check } from './icon/check.svg';
 import { ReactComponent as CheckComplete } from './icon/check-complete.svg'
+import classNames from 'classnames'
 
 
 class TodoItem extends Component {
   render() {
-    var classNames = require('classnames');
     const { item, onClick } = this.props;
     let className = classNames('TodoItem', {'TodoItem-complete': item.isComplete});
     return (

@@ -7,11 +7,18 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.App h1 {
+  font-family: Helvetica;
+  color: #dddddd;
+  text-align: center;
+  font-size: 3rem;
+}
+
 .TodoItem {
   font-family: Helvetica;
   padding: 10px 5px;
   color: #4d4d4d;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
   font-weight: 300;
   font-size: 24px;
   text-align: center;
@@ -36,3 +43,67 @@
   margin: 0 1rem;
 } 
 
+.App .Header {
+  display: flex;
+  padding: 10px 5px;
+  border-bottom: 1px solid #ccc;
+} 
+
+.Header svg {
+  width: 36px;
+  margin: 0 1rem;
+}
+
+.Header input {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 300;
+  width:  100%;
+  border: none;
+}
+
+.App .Header input:focus {
+  outline: none;
+}
+
+
+.App .Footer {
+  display: flex;
+  align-items: center;
+}
+
+.App .Footer .quantityItems {
+  font-family: Helvetica;
+  color: #4d4d4d73;
+  font-weight: 300;
+  margin-left: 1rem;
+  flex-grow: 0.5;
+}
+
+.App .Footer .wrap-btn-footer button { 
+  color: #b9b7b7;
+  padding: 7px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+
+.App .Footer .wrap-btn-footer .btn {
+  background-color: #eee;
+  color: #9d9d9d ;
+  border: #dddddd solid 2px;
+  outline: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.App .nothing {
+  font-family: Helvetica;
+  padding: 10px 5px;
+  color: #4d4d4d60;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
